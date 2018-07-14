@@ -1,8 +1,6 @@
 import '../model/Password.dart';
 
-/**
- * This Provider handles the password repository and allows to fetch and save passwords.
- */
+/// This Provider handles the password repository and allows to fetch and save passwords.
 class PasswordProvider {
 
   // Initializing the repo with a bunch of samples

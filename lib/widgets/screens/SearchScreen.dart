@@ -11,11 +11,6 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
-  int _counter = 0;
-
-  _refineSearch(String query) {
-    print(query);
-  }
 
   @override
   Widget build(BuildContext context) {
