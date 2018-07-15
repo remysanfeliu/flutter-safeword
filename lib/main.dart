@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/screens/SearchScreen.dart';
+import 'package:safeword/widgets/screens/SearchScreen.dart';
 
 void main() => runApp(new MyApp());
 

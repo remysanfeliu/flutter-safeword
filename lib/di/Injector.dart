@@ -1,4 +1,4 @@
-import '../services/PasswordProvider.service.dart';
+import 'package:safeword/services/PasswordProvider.service.dart';
 
 /// Class used a very, very basic dedency injector
 class Injector {

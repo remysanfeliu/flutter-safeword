@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import './PasswordCellWidget.dart';
-import '../di/Injector.dart';
-import '../services/PasswordProvider.service.dart';
+import 'package:safeword/widgets/PasswordCellWidget.dart';
+import 'package:safeword/di/Injector.dart';
+import 'package:safeword/services/PasswordProvider.service.dart';
 
 class PasswordListWidget extends StatelessWidget {
 

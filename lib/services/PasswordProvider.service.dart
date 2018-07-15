@@ -1,4 +1,4 @@
-import '../model/Password.dart';
+import 'package:safeword/model/Password.dart';
 
 /// This Provider handles the password repository and allows to fetch and save passwords.
 class PasswordProvider {

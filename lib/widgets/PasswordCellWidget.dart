@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../model/Password.dart';
+import 'package:safeword/model/Password.dart';
 
 class PasswordCellWidget extends StatefulWidget {
 
