@@ -26,9 +26,15 @@ class _PasswordCellState extends State<PasswordCellWidget> {
 
   _PasswordCellState(this._pwd);
 
-  void onVIsibilityPressed() {
+  void onVIsibilityPressed(TapDownDetails sender) {
     setState(() {
-          this._isVisible = !this._isVisible;
+          this._isVisible = true;
+        });
+  }
+
+  void onVIsibilityReleased(TapUpDetails sender) {
+    setState(() {
+          this._isVisible = false;
         });
   }
   
@@ -51,7 +57,12 @@ class _PasswordCellState extends State<PasswordCellWidget> {
             this.passwordText
           ]),
         ),
-        new IconButton(icon: new Icon(Icons.visibility, color: Colors.blueGrey, size: 32.0), onPressed: this.onVIsibilityPressed)
+        new GestureDetector(
+          child: new IconButton(
+            icon: new Icon(Icons.visibility, color: Colors.blueGrey, size: 32.0), onPressed: null),
+            onTapDown: this.onVIsibilityPressed,
+            onTapUp: this.onVIsibilityReleased
+        )
       ])
     );
   }
